@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 
 module.exports = {
-    redeemvouchers: async function (phone_number, voucher_code) {
+    pay: async function (phone_number, voucher_code) {
         let res;
 		voucher_code = voucher_code.replace('https://gift.truemoney.com/campaign/?v=','');
         if(!/^[0-9a-zA-Z]*$/i.test(voucher_code)) {
