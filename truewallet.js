@@ -7,14 +7,14 @@ module.exports = {
         if(!/^[0-9a-zA-Z]*$/i.test(voucher_code)) {
             res = {
                 status: 'FAIL',
-				reason: 'ซองอั่งเปาต้องมีแค่อักษรภาษาอังกฤษ'
+		reason: 'ซองอั่งเปาต้องมีแค่อักษรภาษาอังกฤษ'
             };
             return res;
         }
         if(voucher_code.length <= 0) {
             res = {
                 status: 'FAIL',
-				reason: 'ซองอั่งเปาว่างเปล่า' 
+		reason: 'ซองอั่งเปาว่างเปล่า' 
             };
             return res;
         }
@@ -37,7 +37,7 @@ module.exports = {
         } else {
             res = {
                 status: 'FAIL',
-				reason: resjson.status.message
+		reason: resjson.status.message
             };
             return res;
         }
